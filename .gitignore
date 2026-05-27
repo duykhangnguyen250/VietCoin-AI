@@ -1,0 +1,29 @@
+node_modules/
+dist/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+.vscode/
+.idea/
+*.db
+*.log
+
+# Nếu model của bạn > 50MB, bạn nên bỏ comment dòng dưới và upload model thủ công lên server
+# app/models_ai/
+
+# Upload / Debug temp files (sinh ra lúc runtime, không commit)
+app/utils/download/*
+!app/utils/download/.gitkeep
+
+# File zip build mobile app
+VietCoinAI_Mobile_App.zip
+
+# Android Build & IDE files
+.gradle/
+build/
+local.properties
+*.iml
+.externalNativeBuild/

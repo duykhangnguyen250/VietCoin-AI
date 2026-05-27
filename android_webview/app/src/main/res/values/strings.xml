@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">VietHistory WebView</string>
+    <string name="error_no_internet">Không có kết nối mạng. Vui lòng kiểm tra lại.</string>
+</resources>

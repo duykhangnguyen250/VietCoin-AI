@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Trang chủ" />
+        <item
+            android:id="@+id/nav_history"
+            android:title="Lịch sử giám định"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_payment"
+            android:title="Nạp điểm (Token)"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Hồ sơ cá nhân"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_admin"
+            android:title="Quản trị hệ thống"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Đăng xuất"
+            android:visible="false" />
+    </group>
+</menu>
