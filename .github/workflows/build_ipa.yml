@@ -5,6 +5,9 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: macos-latest
@@ -41,4 +44,19 @@ jobs:
         with:
           name: app_web_view_ipa
           path: app_web_view/app_web_view.ipa
+
+      - name: Create Release and Upload Asset
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Latest iOS WebView Build
+          body: |
+            Bản build tự động mới nhất của app iOS WebView (.ipa).
+            Bạn có thể tải về trực tiếp từ phần Assets bên dưới mà không cần đăng nhập GitHub.
+          draft: false
+          prerelease: false
+          files: app_web_view/app_web_view.ipa
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
